@@ -8,7 +8,7 @@ This is a simple CRUD API for posting social media posts, as well as adding like
 
    
 bash
-   git clone <repository-url>
+   `git clone https://github.com/Saurabhdixit93/Social_Apis_Assignment`
   
 
 
@@ -24,7 +24,7 @@ bash
 
    
 bash
-   node index.js
+   npm start 
   
 
 
