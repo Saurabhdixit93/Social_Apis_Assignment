@@ -15,7 +15,7 @@ app.use("*",(req,res) =>{
   return res.status(404).json({
     PageNotFound: "Can't Found Page"
   });
-}
+});
 // starting server
 app.listen(PORT, () => {
   console.log(`Successfully Running Server in PORT: ${PORT}`);
