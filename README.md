@@ -11,20 +11,15 @@ bash
    `git clone https://github.com/Saurabhdixit93/Social_Apis_Assignment`
   
 
-
 2. Install the dependencies:
-
-   
-bash
-   npm install
+ 
+    `npm install`
   
 
 
 3. Start the server:
 
-   
-bash
-   npm start 
+   `npm start`
   
 
 
