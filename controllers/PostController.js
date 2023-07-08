@@ -109,7 +109,7 @@ module.exports.DeleteSpecificPostById = async (req, res) => {
       });
     }
     Post.splice(index, 1);
-    return res.status(204).json({
+    return res.status(200).json({
       success: 'Post Deleted Successfully',
     });
   } catch (error) {
