@@ -1,3 +1,4 @@
+// Sample Data For post later u can use model for permanent saving in DB
 const Post = [
   (id = ''),
   (title = ''),
@@ -5,8 +6,10 @@ const Post = [
   (likes = ''),
   (comments = ''),
 ];
+// for id using UUID
 const uuid = require('uuid');
 
+// new post create function
 module.exports.NewPost = async (req, res) => {
   const { title, content } = req.body;
   try {
@@ -29,6 +32,7 @@ module.exports.NewPost = async (req, res) => {
   }
 };
 
+// get all post function
 module.exports.GetAllPosts = async (req, res) => {
   try {
     if (Post.length === 0) {
@@ -47,6 +51,7 @@ module.exports.GetAllPosts = async (req, res) => {
   }
 };
 
+// get specific post by postId
 module.exports.GetSpecificPostById = async (req, res) => {
   const { postId } = req.params;
 
@@ -68,6 +73,7 @@ module.exports.GetSpecificPostById = async (req, res) => {
   }
 };
 
+// update specific post by postId function
 module.exports.UpdateSpecificPostById = async (req, res) => {
   const { postId } = req.params;
   const { title, content } = req.body;
@@ -91,6 +97,7 @@ module.exports.UpdateSpecificPostById = async (req, res) => {
   }
 };
 
+// Delete specific post by postId function
 module.exports.DeleteSpecificPostById = async (req, res) => {
   const { postId } = req.params;
   try {
@@ -112,6 +119,7 @@ module.exports.DeleteSpecificPostById = async (req, res) => {
   }
 };
 
+// Add like in specific post by postId function
 module.exports.AddLikeSpecificPostById = async (req, res) => {
   const { postId } = req.params;
   try {
@@ -137,6 +145,7 @@ module.exports.AddLikeSpecificPostById = async (req, res) => {
   }
 };
 
+// Add Comment in specific post by postId function
 module.exports.AddCommentSpecificPostById = async (req, res) => {
   const { postId } = req.params;
   const { comment } = req.body;
