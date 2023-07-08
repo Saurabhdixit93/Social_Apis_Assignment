@@ -1,11 +1,5 @@
 // Sample Data For post later u can use model for permanent saving in DB
-const Post = [
-  (id = ''),
-  (title = ''),
-  (content = ''),
-  (likes = ''),
-  (comments = ''),
-];
+const Post = [];
 // for id using UUID
 const uuid = require('uuid');
 
