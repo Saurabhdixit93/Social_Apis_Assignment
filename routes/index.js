@@ -27,6 +27,12 @@ router.post('/posts/:postId/add-like', AddLikeSpecificPostById);
 // using routes for Add Comment in Specific post by postId API
 router.post('/posts/:postId/add-comment', AddCommentSpecificPostById);
 
+//home page route
+router.get("/",(req,res) =>{
+  return res.status(200).json({
+    HomePage: "Site Working Successfully"
+  });
+});
 
 // exporting for global
 module.exports = router;
